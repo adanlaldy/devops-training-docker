@@ -118,3 +118,59 @@ Dans la question 3, on utilisait -v avec le chemin absolu de ou se trouvait l'in
 Mount volume permet d'avoir quelque chose qui tient sur une ligne, mais difficilement lisible.
 
 COPY dans le Dockerfile permet de faire la même chose, mais d'avoir quelque chose de plus structuré, qui est plus facilement lisible et modifiable.
+
+## 5.a
+### commande :
+```
+sudo docker pull mysql
+```
+### sortie : 
+```
+Using default tag: latest
+latest: Pulling from library/mysql
+9845df06f911: Pull complete 
+4bd1fb59dd90: Pull complete 
+d23320eed97a: Pull complete 
+7074f55c9a02: Pull complete 
+72ac912b8a2e: Pull complete 
+b097427f1ebe: Pull complete 
+b288ccce2510: Pull complete 
+7488ffd7127f: Pull complete 
+8a50ff4ab30c: Pull complete 
+5056ce4ab875: Pull complete 
+Digest: sha256:04768cb63395f56140b4e92cad7c8d9f48dfa181075316e955da75aadca8a7cd
+Status: Downloaded newer image for mysql:latest
+docker.io/library/mysql:latest
+```
+### commande : 
+```
+sudo docker pull phpmyadmin/phpmyadmin
+```
+### sortie : 
+```
+Using default tag: latest
+latest: Pulling from phpmyadmin/phpmyadmin
+af302e5c37e9: Pull complete 
+71a74ed03dab: Pull complete 
+3ef8d0774deb: Pull complete 
+11d17388a3b8: Pull complete 
+0814cbbf72a2: Pull complete 
+3a28acedadf8: Pull complete 
+2ab7ef40feaf: Pull complete 
+88324ccb20a1: Pull complete 
+ad5f2fca9132: Pull complete 
+9df2a6231627: Pull complete 
+b3207e60ff9a: Pull complete 
+d18c9f420b35: Pull complete 
+673faad72ba8: Pull complete 
+4f4fb700ef54: Pull complete 
+a5c74661bb9e: Pull complete 
+1cf5cbfd971f: Pull complete 
+e92d8472eb26: Pull complete 
+7755344c0dda: Pull complete 
+b0f9dd503cef: Pull complete 
+2ee0fe041682: Pull complete 
+Digest: sha256:95e01f723b5e55fabf16d0473f1df2354c4c6352b35902b51d6a6245e074aee4
+Status: Downloaded newer image for phpmyadmin/phpmyadmin:latest
+docker.io/phpmyadmin/phpmyadmin:latest
+```
