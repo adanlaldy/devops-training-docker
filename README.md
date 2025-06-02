@@ -176,19 +176,19 @@ docker.io/phpmyadmin/phpmyadmin:latest
 ```
 ### commande : 
 ```
-sudo docker run --name phpmyadmin -d -e PMA_HOST=mysql -p 5432:80 phpmyadmin/phpmyadmin
-```
-### sortie :
-```
-6cc0a2c325f46f4f4b0ba403acf16d872daf559ced287f5667cffb5f5076ca61
-```
-### commande : 
-```
 sudo docker run --name mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
 ```
 ### sortie : 
 ```
 e28addd19108318a2ceee92e32d96edbb6dad2fdafc97832ed4564ba346be54f
+```
+### commande :
+```
+sudo docker run --name phpmyadmin -d -e PMA_HOST=mysql -p 5432:80 phpmyadmin/phpmyadmin
+```
+### sortie :
+```
+6cc0a2c325f46f4f4b0ba403acf16d872daf559ced287f5667cffb5f5076ca61
 ```
 ### commande : 
 ```
@@ -210,3 +210,13 @@ sudo docker network connect my-net phpmyadmin
 Docker-compose lit une configuration d'un fichier YAML.
 Docker run est une commande basée sur une ligne de commande.
 Docker-compose peut configurer et lancer plusieurs conteneurs alors que docker run seulement un à la fois.
+
+## 6.b
+Lancer toute les containers du fichier YAML : 
+```
+sudo docker compose up
+```
+Commande pour stopper tous les containers :
+```
+sudo docker compose stop
+```
