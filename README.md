@@ -205,3 +205,8 @@ sudo docker network connect my-net phpmyadmin
 ```
 ### screenshot : 
 ![Screenshot](/assets/images/phpmyadmin.png "Screenshot")
+
+## 6.a
+Docker-compose lit une configuration d'un fichier YAML.
+Docker run est une commande basée sur une ligne de commande.
+Docker-compose peut configurer et lancer plusieurs conteneurs alors que docker run seulement un à la fois.
