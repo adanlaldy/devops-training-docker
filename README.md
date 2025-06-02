@@ -78,3 +78,26 @@ sudo docker cp /home/nada/WebstormProjects/devops-training-docker/html/index.htm
 ```
 Successfully copied 2.05kB to hello-world:/usr/local/apache2/htdocs/index.html
 ```
+
+## 4.a
+### commande :
+```
+sudo docker build -t my-image .
+```
+### sortie : 
+```
+[+] Building 0.2s (7/7) FINISHED                                                                                                                                                                                     docker:default
+ => [internal] load build definition from Dockerfile                                                                                                                                                                           0.0s
+ => => transferring dockerfile: 184B                                                                                                                                                                                           0.0s
+ => [internal] load metadata for docker.io/library/httpd:latest                                                                                                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                              0.0s
+ => => transferring context: 2B                                                                                                                                                                                                0.0s
+ => [internal] load build context                                                                                                                                                                                              0.0s
+ => => transferring context: 202B                                                                                                                                                                                              0.0s
+ => [1/2] FROM docker.io/library/httpd:latest                                                                                                                                                                                  0.0s
+ => CACHED [2/2] COPY /html/ /usr/local/apache2/htdocs/                                                                                                                                                                        0.0s
+ => exporting to image                                                                                                                                                                                                         0.0s
+ => => exporting layers                                                                                                                                                                                                        0.0s
+ => => writing image sha256:8f5a213bde5adb14ad313ef71517957e39b8326391f4d947a31230eaa088ffc0                                                                                                                                   0.0s
+ => => naming to docker.io/library/my-image
+```
