@@ -174,3 +174,34 @@ Digest: sha256:95e01f723b5e55fabf16d0473f1df2354c4c6352b35902b51d6a6245e074aee4
 Status: Downloaded newer image for phpmyadmin/phpmyadmin:latest
 docker.io/phpmyadmin/phpmyadmin:latest
 ```
+### commande : 
+```
+sudo docker run --name phpmyadmin -d -e PMA_HOST=mysql -p 5432:80 phpmyadmin/phpmyadmin
+```
+### sortie :
+```
+6cc0a2c325f46f4f4b0ba403acf16d872daf559ced287f5667cffb5f5076ca61
+```
+### commande : 
+```
+sudo docker run --name mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+```
+### sortie : 
+```
+e28addd19108318a2ceee92e32d96edbb6dad2fdafc97832ed4564ba346be54f
+```
+### commande : 
+```
+sudo docker network create my-net
+```
+### sortie :
+```
+7e2668f6a26a2b34857ee3893ab8023791ac83847a8d5d3238a6b08260074c80
+```
+### commandes : 
+```
+sudo docker network connect my-net mysql
+sudo docker network connect my-net phpmyadmin
+```
+### screenshot : 
+![Screenshot](/assets/images/phpmyadmin.png "Screenshot")
