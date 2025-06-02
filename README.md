@@ -30,3 +30,13 @@ sudo docker images
 REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
 httpd        latest    958373fdd7e8   4 months ago   148MB
 ```
+
+## 3.d
+### commande :
+```
+sudo docker run --name hello-world -d -p 80:80 -v /home/nada/WebstormProjects/devops-training-docker/html/:/usr/local/apache2/htdocs/:Z httpd
+```
+### sortie : 
+```
+204f30780991434c707cb89da9b198775f8f146330b0221e9a7d71b44bf112e4
+```
