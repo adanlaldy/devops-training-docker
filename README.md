@@ -40,3 +40,30 @@ sudo docker run --name hello-world -d -p 80:80 -v /home/nada/WebstormProjects/de
 ```
 204f30780991434c707cb89da9b198775f8f146330b0221e9a7d71b44bf112e4
 ```
+
+## 3.e
+### commande :
+```
+sudo docker ps
+```
+### sortie :
+```
+CONTAINER ID   IMAGE     COMMAND              CREATED         STATUS         PORTS                               NAMES
+204f30780991   httpd     "httpd-foreground"   3 minutes ago   Up 3 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp   hello-world
+```
+### commande : 
+```
+sudo docker stop 20
+```
+### sortie :
+```
+20
+```
+### commande :
+```
+sudo docker rm 20
+```
+### sortie :
+```
+20
+```
