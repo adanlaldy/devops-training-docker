@@ -67,3 +67,13 @@ sudo docker rm 20
 ```
 20
 ```
+
+## 3.f 
+### commande : 
+```
+sudo docker cp /home/nada/WebstormProjects/devops-training-docker/html/index.html hello-world:/usr/local/apache2/htdocs/index.html
+```
+### sortie : 
+```
+Successfully copied 2.05kB to hello-world:/usr/local/apache2/htdocs/index.html
+```
