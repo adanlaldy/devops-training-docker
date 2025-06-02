@@ -101,3 +101,13 @@ sudo docker build -t my-image .
  => => writing image sha256:8f5a213bde5adb14ad313ef71517957e39b8326391f4d947a31230eaa088ffc0                                                                                                                                   0.0s
  => => naming to docker.io/library/my-image
 ```
+
+## 4.b:
+### commande : 
+```
+sudo docker run -d -p 8080:80 --name mon-conteneur my-image
+```
+### sortie : 
+```
+4b8eafee9f26f44395cf654f027fc0628320e2664ab35be8b980b65a8ec33dcb
+```
