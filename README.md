@@ -102,7 +102,7 @@ sudo docker build -t my-image .
  => => naming to docker.io/library/my-image
 ```
 
-## 4.b:
+## 4.b
 ### commande : 
 ```
 sudo docker run -d -p 8080:80 --name mon-conteneur my-image
@@ -111,3 +111,10 @@ sudo docker run -d -p 8080:80 --name mon-conteneur my-image
 ```
 4b8eafee9f26f44395cf654f027fc0628320e2664ab35be8b980b65a8ec33dcb
 ```
+
+## 4.c
+Dans la question 3, on utilisait -v avec le chemin absolu de ou se trouvait l'index.html et on précisait l'endroit ou ça devait pointer sur le conteneur. Tout cela dans la commande de run.
+
+Mount volume permet d'avoir quelque chose qui tient sur une ligne, mais difficilement lisible.
+
+COPY dans le Dockerfile permet de faire la même chose, mais d'avoir quelque chose de plus structuré, qui est plus facilement lisible et modifiable.
