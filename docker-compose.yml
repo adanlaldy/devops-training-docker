@@ -4,18 +4,12 @@ services:
     image: mysql
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: test
-    networks:
-     - my-net
+      MYSQL_ROOT_PASSWORD: my-super-password
 
   phpmyadmin:
    image: phpmyadmin/phpmyadmin
+   container_name: phpmyadmin
    ports:
      - 5432:80
    environment:
      - PMA_HOST=mysql
-   networks:
-     - my-net
-
-networks:
-    my-net: { }
