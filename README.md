@@ -33,6 +33,7 @@ httpd        latest    958373fdd7e8   4 months ago   148MB
 
 ## 3.d
 ### commande :
+(j'ai du rajouter :Z afin de donner un contexte SELinux adapté afin de donner les bons droits aux fichiers, sinon, j'avais une erreur 403 Forbidden)
 ```
 sudo docker run --name hello-world -d -p 80:80 -v /home/nada/WebstormProjects/devops-training-docker/html/:/usr/local/apache2/htdocs/:Z httpd
 ```
